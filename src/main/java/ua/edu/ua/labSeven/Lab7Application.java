@@ -1,4 +1,4 @@
-package ua.edu.ua.lab7;
+package ua.edu.ua.labSeven;
 
 import java.util.List;
 import java.util.UUID;
@@ -7,8 +7,6 @@ import java.util.stream.Stream;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication

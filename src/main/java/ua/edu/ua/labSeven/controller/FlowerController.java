@@ -1,13 +1,13 @@
-package ua.edu.ua.lab7.controller;
+package ua.edu.ua.labSeven.controller;
 
 import java.util.List;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import ua.edu.ua.lab7.flower.Flower;
-import ua.edu.ua.lab7.flower.FlowerColor;
-import ua.edu.ua.lab7.flower.FlowerType;
+import ua.edu.ua.labSeven.flower.Flower;
+import ua.edu.ua.labSeven.flower.FlowerColor;
+import ua.edu.ua.labSeven.flower.FlowerType;
 
 @RestController
 public class FlowerController {

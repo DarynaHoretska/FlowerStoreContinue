@@ -1,7 +1,7 @@
-package ua.edu.ua.lab7;
+package ua.edu.ua.labSeven;
 
 import lombok.Data;
-import ua.edu.ua.lab7.flower.FlowerBucket;
+import ua.edu.ua.labSeven.flower.FlowerBucket;
 
 @Data
 public class Item {

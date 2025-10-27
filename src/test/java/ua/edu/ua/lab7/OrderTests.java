@@ -4,10 +4,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-import ua.edu.ua.lab7.delivery.DHLDeliveryStrategy;
-import ua.edu.ua.lab7.delivery.PostDeliveryStrategy;
-import ua.edu.ua.lab7.payment.CreditCardPaymentStrategy;
-import ua.edu.ua.lab7.payment.PayPalPaymentStrategy;
+import ua.edu.ua.labSeven.delivery.DHLDeliveryStrategy;
+import ua.edu.ua.labSeven.delivery.PostDeliveryStrategy;
+import ua.edu.ua.labSeven.payment.CreditCardPaymentStrategy;
+import ua.edu.ua.labSeven.payment.PayPalPaymentStrategy;
 
 public class OrderTests {
     @Test

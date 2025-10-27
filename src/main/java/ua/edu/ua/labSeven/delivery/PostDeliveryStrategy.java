@@ -1,4 +1,4 @@
-package ua.edu.ua.lab7.delivery;
+package ua.edu.ua.labSeven.delivery;
 
 public class PostDeliveryStrategy implements Delivery{
     public double delivery(double orderPrice){

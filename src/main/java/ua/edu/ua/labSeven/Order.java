@@ -1,11 +1,11 @@
-package ua.edu.ua.lab7;
+package ua.edu.ua.labSeven;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import lombok.Data;
-import ua.edu.ua.lab7.delivery.Delivery;
-import ua.edu.ua.lab7.payment.Payment;
+import ua.edu.ua.labSeven.delivery.Delivery;
+import ua.edu.ua.labSeven.payment.Payment;
 
 @Data
 public class Order {
