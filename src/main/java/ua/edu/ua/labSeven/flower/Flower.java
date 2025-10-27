@@ -19,7 +19,7 @@ public class Flower {
     @Getter
     private FlowerType flowerType;
 
-    public Flower(Flower other){
+    public Flower(Flower other) {
         this.sepalLength = other.sepalLength;
         this.color = other.color;
         this.price = other.price;

@@ -6,7 +6,7 @@ import java.util.List;
 public class FlowerBucket {
     private List<FlowerPack> flowerPacks;
 
-    public FlowerBucket(){
+    public FlowerBucket() {
         this.flowerPacks = new ArrayList<>();
     }
 
@@ -14,7 +14,7 @@ public class FlowerBucket {
         flowerPacks.add(flowerPack);
     }
 
-    public double getPrice(){
+    public double getPrice() {
         return flowerPacks.stream().mapToDouble(pack -> pack.getPrice()).sum();
     }
 }
