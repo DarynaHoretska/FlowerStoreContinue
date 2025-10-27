@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-public class Lab7Application {
+public class LabSevenApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Lab7Application.class, args);
+		SpringApplication.run(LabSevenApplication.class, args);
 	}
 	@GetMapping("/list")
 	// @RequestMapping(method = RequestMethod.GET, path="/list");
