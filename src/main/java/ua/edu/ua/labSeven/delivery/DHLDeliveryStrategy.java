@@ -1,4 +1,4 @@
-package ua.edu.ua.labSeven.delivery;
+package ua.edu.ua.labseven.delivery;
 
 public class DHLDeliveryStrategy implements Delivery{
     public double delivery(double orderPrice){

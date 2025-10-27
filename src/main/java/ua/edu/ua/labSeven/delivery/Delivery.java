@@ -1,4 +1,4 @@
-package ua.edu.ua.labSeven.delivery;
+package ua.edu.ua.labseven.delivery;
 
 public interface Delivery {
     double delivery(double orderPrice);

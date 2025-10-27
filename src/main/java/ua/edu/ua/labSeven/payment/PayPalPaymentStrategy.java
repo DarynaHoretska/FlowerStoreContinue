@@ -1,4 +1,4 @@
-package ua.edu.ua.labSeven.payment;
+package ua.edu.ua.labseven.payment;
 
 public class PayPalPaymentStrategy implements Payment {
     public double payment(double orderPrice) {

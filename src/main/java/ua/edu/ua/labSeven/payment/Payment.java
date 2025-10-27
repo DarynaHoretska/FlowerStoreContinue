@@ -1,4 +1,4 @@
-package ua.edu.ua.labSeven.payment;
+package ua.edu.ua.labseven.payment;
 
 public interface Payment {
     double payment(double orderPrice);

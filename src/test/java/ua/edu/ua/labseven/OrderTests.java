@@ -1,13 +1,13 @@
-package ua.edu.ua.lab7;
+package ua.edu.ua.labseven;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-import ua.edu.ua.labSeven.delivery.DHLDeliveryStrategy;
-import ua.edu.ua.labSeven.delivery.PostDeliveryStrategy;
-import ua.edu.ua.labSeven.payment.CreditCardPaymentStrategy;
-import ua.edu.ua.labSeven.payment.PayPalPaymentStrategy;
+import ua.edu.ua.labseven.delivery.DHLDeliveryStrategy;
+import ua.edu.ua.labseven.delivery.PostDeliveryStrategy;
+import ua.edu.ua.labseven.payment.CreditCardPaymentStrategy;
+import ua.edu.ua.labseven.payment.PayPalPaymentStrategy;
 
 public class OrderTests {
     private static final int STO = 100;

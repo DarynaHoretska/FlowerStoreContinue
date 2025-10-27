@@ -1,10 +1,10 @@
-package ua.edu.ua.labSeven;
+package ua.edu.ua.labseven;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import ua.edu.ua.labSeven.flower.FlowerBucket;
-import ua.edu.ua.labSeven.flower.FlowerPack;
+import ua.edu.ua.labseven.flower.FlowerBucket;
+import ua.edu.ua.labseven.flower.FlowerPack;
 
 public class Store {
     private List<FlowerPack> flowerPacks;

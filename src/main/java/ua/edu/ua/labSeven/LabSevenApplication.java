@@ -1,4 +1,4 @@
-package ua.edu.ua.labSeven;
+package ua.edu.ua.labseven;
 
 import java.util.List;
 import java.util.UUID;
