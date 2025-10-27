@@ -11,11 +11,13 @@ import ua.edu.ua.labseven.flower.FlowerType;
 
 @RestController
 public class FlowerController {
+    private static final double BASE_DELIVERY_COST = 100.0;
+    private static final double DISCOUNT_THRESHOLD = 10.0;
 
     @GetMapping("/flowers")
-    public List<Flower> getFlowers(){
+    public List<Flower> getFlowers() {
         return List.of(
-            new Flower(10.0, FlowerColor.BLUE, 100.0, FlowerType.TULIP)
+            new Flower(DISCOUNT_THRESHOLD, FlowerColor.BLUE, BASE_DELIVERY_COST, FlowerType.TULIP)
         );
     }
 }
