@@ -10,30 +10,35 @@ import ua.edu.ua.labSeven.payment.CreditCardPaymentStrategy;
 import ua.edu.ua.labSeven.payment.PayPalPaymentStrategy;
 
 public class OrderTests {
+    private static final int STO = 100;
+    private static final int CHOTYRYSTA = 400;
+    private static final int SHISTSOT = 600;
+    private static final int TYSHYDVISTY = 1200;
+
     @Test
     void testDHLDelivery() {
         DHLDeliveryStrategy dhl = new DHLDeliveryStrategy();
-        assertEquals(0, dhl.delivery(600));
-        assertEquals(100, dhl.delivery(400));
+        assertEquals(0, dhl.delivery(SHISTSOT));
+        assertEquals(STO, dhl.delivery(CHOTYRYSTA));
     }
 
     @Test
     void testPostDelivery() {
         PostDeliveryStrategy post = new PostDeliveryStrategy();
-        assertEquals(0, post.delivery(1200));
-        assertEquals(100, post.delivery(800));
+        assertEquals(0, post.delivery(TYSHYDVISTY));
+        assertEquals(STO, post.delivery(SHISTSOT));
     }
 
     @Test
     void testCreditCardPayment() {
         CreditCardPaymentStrategy cc = new CreditCardPaymentStrategy();
-        assertEquals(500, cc.payment(500));
+        assertEquals(CHOTYRYSTA, cc.payment(CHOTYRYSTA));
     }
 
     @Test
     void testPayPalPayment() {
         PayPalPaymentStrategy paypal = new PayPalPaymentStrategy();
-        assertEquals(700, paypal.payment(700));
+        assertEquals(SHISTSOT, paypal.payment(SHISTSOT));
     }
 }
 
