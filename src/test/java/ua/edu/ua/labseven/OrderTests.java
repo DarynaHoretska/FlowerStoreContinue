@@ -1,7 +1,8 @@
 package ua.edu.ua.labseven;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import ua.edu.ua.labseven.delivery.DHLDeliveryStrategy;
@@ -18,27 +19,27 @@ public class OrderTests {
     @Test
     void testDHLDelivery() {
         DHLDeliveryStrategy dhl = new DHLDeliveryStrategy();
-        assertEquals(0, dhl.delivery(SHISTSOT));
-        assertEquals(STO, dhl.delivery(CHOTYRYSTA));
+        Assertions.assertEquals(0, dhl.delivery(SHISTSOT));
+        Assertions.assertEquals(STO, dhl.delivery(CHOTYRYSTA));
     }
 
     @Test
     void testPostDelivery() {
         PostDeliveryStrategy post = new PostDeliveryStrategy();
-        assertEquals(0, post.delivery(TYSHYDVISTY));
-        assertEquals(STO, post.delivery(SHISTSOT));
+        Assertions.assertEquals(0, post.delivery(TYSHYDVISTY));
+        Assertions.assertEquals(STO, post.delivery(SHISTSOT));
     }
 
     @Test
     void testCreditCardPayment() {
         CreditCardPaymentStrategy cc = new CreditCardPaymentStrategy();
-        assertEquals(CHOTYRYSTA, cc.payment(CHOTYRYSTA));
+        Assertions.assertEquals(CHOTYRYSTA, cc.payment(CHOTYRYSTA));
     }
 
     @Test
     void testPayPalPayment() {
         PayPalPaymentStrategy paypal = new PayPalPaymentStrategy();
-        assertEquals(SHISTSOT, paypal.payment(SHISTSOT));
+        Assertions.assertEquals(SHISTSOT, paypal.payment(SHISTSOT));
     }
 }
 
