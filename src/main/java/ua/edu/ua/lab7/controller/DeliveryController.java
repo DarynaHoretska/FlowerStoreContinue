@@ -19,7 +19,7 @@ public class DeliveryController {
         return delivery.delivery(orderPrice);
     }
 
-    @GetMapping("DHLdelivery")
+    @GetMapping("/DHLdelivery")
     public double DHLDelivery(@RequestParam double orderPrice) {
         Delivery delivery = new DHLDeliveryStrategy();
         return delivery.delivery(orderPrice);
